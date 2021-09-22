@@ -10,7 +10,6 @@ class Particles {
         this.color=color(random(0, 255), random(0, 255), random(0, 255));
         World.add(world, this.body);
 
-        World.add(world, this.body);
     }
     display() {
 
@@ -22,7 +21,7 @@ class Particles {
         rotate(angle);
         imageMode(CENTER);
         noStroke();
-        fill("white");
+        fill(this.color);
         ellipseMode(RADIUS);
         ellipse(0,0,this.r,this.r);
         pop();
